@@ -657,8 +657,9 @@ you if you forget either of the rules above!
   should end in a question mark.
   (i.e. `Array#empty?`).
 * The names of potentially "dangerous" methods (i.e. methods that modify `self` or the
-  arguments, `exit!` (doesn't run the finalizers like `exit` does), etc.) should end with an exclamation mark if
-  there exists a safe version of that *dangerous* method.
+  arguments, `exit!` (doesn't run the finalizers like `exit` does), etc.)
+  should end with an exclamation mark if and only if there exists a safe
+  version of that *dangerous* method.
 
     ```Ruby
     # bad - there is not matching 'safe' method
